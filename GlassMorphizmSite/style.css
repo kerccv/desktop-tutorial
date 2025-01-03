@@ -1,0 +1,165 @@
+.bdy{
+  background-image: url(file:///C:/Users/kerccv/Downloads/leaves-6941709.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed
+
+}
+
+.menu-main {
+  position:absolute;
+  top:58px;
+  right: 0;
+  left: 17%;
+  width: 1280px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(7.2px);
+  list-style: none;
+  margin: 0px 0 5px;
+  padding: 25px 0 5px;
+  text-align: right;
+}
+
+.menu-main li {display: inline-block;}
+
+.menu-main li:after {
+  content: "";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+
+.menu-main li:last-child:after {content: none;}
+
+.menu-main a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 30px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .1s;
+}
+
+.menu-main a, .menu-main a:visited {color: #b8b8b8;}
+
+.menu-main a.current, .menu-main a:hover{color: #ffffff;}
+
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #ffffff;
+  transition: .8s;
+}
+
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+.lang{
+  width: 100%;
+  height: 100%;
+  background-image: url(file:///C:/Users/kerccv/Downloads/pngwing.com.png);
+}
+
+.menu-main__item_link.current,
+.menu-main__item_link:hover {
+  color: #feb386;
+}
+
+.mainsub{
+    background: white;
+}
+.menu-muin {
+  position:absolute;
+  top:58px;
+  right: 0;
+  left: 17%;
+  width: 1280px;
+  height: 40px;
+
+  list-style: none;
+  margin: 0px 0 5px;
+  padding: 25px 0 5px;
+  text-align: right;
+}
+
+.menu-muin li {display: inline-block;}
+
+.menu-muin li:after {
+  content: "";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+
+.menu-muin li:last-child:after {content: none;}
+
+.menu-muin a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 30px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .1s;
+}
+
+.menu-muin a, .menu-muin a:visited {color: #b8b8b8;}
+
+.menu-muin a.current, .menu-muin a:hover{color: #ffffff;}
+
+.menu-muin a:before,
+.menu-muin a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #ffffff;
+  transition: .8s;
+}
+
+.menu-muin a:hover:before, .menu-main .current:before {left: 0;}
+
+.menu-muin a:hover:after, .menu-main .current:after {right: 0;}   
+
+@media (max-width: 550px) {
+.menu-muin {padding-top: 0;}
+.menu-muin li {display: block;}
+.menu-muin li:after {content: none;}
+.menu-muin a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
